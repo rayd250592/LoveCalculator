@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FFFB0094">
+    <Grid Background="#FFFF7FCB">
         <TextBlock HorizontalAlignment="Left" Margin="426,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.822,-0.724">
         	<Run Text="Compatability"/>
         	<Run Text=" Calculator"/>
@@ -19,6 +19,7 @@
         <TextBox x:Name="name1" HorizontalAlignment="Left" Margin="162,392,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="36" Width="210"/>
         <TextBox x:Name="nam2" HorizontalAlignment="Left" Margin="1065,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="36" Width="210"/>
         <TextBlock x:Name="percent" HorizontalAlignment="Left" Margin="693,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" RenderTransformOrigin="0.822,-0.724" Text="%" Visibility="Collapsed"/>
+        <Button Content="About" HorizontalAlignment="Left" Margin="28,695,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click_1"/>
 
     </Grid>
 </Page>

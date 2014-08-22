@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -43,6 +44,13 @@ namespace Love_Calculator
             percent.Visibility = Windows.UI.Xaml.Visibility.Visible;
             res.Text = matchint.ToString();
             
+        }
+
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
+
+        {
+            MessageDialog msg = new MessageDialog("Developed by Raymond Dillon");
+            await msg.ShowAsync();
         }
     }
 }
