@@ -36,13 +36,19 @@ namespace Love_Calculator
         {
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private  async void Button_Click(object sender, RoutedEventArgs e)
         {
             Random matchran = new Random();
             int matchint = matchran.Next(1, 101);
             res.Visibility = Windows.UI.Xaml.Visibility.Visible;
             percent.Visibility = Windows.UI.Xaml.Visibility.Visible;
             res.Text = matchint.ToString();
+
+            if (matchint < 20)
+            {
+                MessageDialog msg = new MessageDialog("Oh dear - things don't look good!");
+                await msg.ShowAsync();
+            }
             
         }
 
